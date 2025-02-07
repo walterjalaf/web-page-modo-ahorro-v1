@@ -1,0 +1,34 @@
+Colecciones:
+Clientes: Aquí puedes almacenar todos los tipos de clientes (hogar, comercio, oficina, pequeña industria, grandes industrias). 
+Puedes diferenciar los tipos de clientes utilizando un campo específico, como tipoCliente.
+Gestores: Para almacenar información sobre los gestores.
+Administración: Para almacenar datos administrativos.
+Estructura de documentos:
+En la colección de Clientes, cada documento puede tener un campo tipoCliente que indique el tipo de cliente. Por ejemplo:
+JSON
+
+{
+  "nombre": "Juan Pérez",
+  "tipoCliente": "hogar",
+  "direccion": "Calle Falsa 123",
+  "consumoEnergetico": 500
+}
+Código generado por IA. Revisar y usar cuidadosamente. Más información sobre preguntas frecuentes.
+Relaciones entre colecciones:
+En MongoDB, las relaciones entre colecciones se manejan mediante referencias. Por ejemplo, 
+si un gestor está asignado a varios clientes, puedes almacenar el id del gestor en los documentos de los clientes:
+JSON
+
+{
+  "nombre": "Juan Pérez",
+  "tipoCliente": "hogar",
+  "direccion": "Calle Falsa 123",
+  "consumoEnergetico": 500,
+  "gestorId": "60c72b2f9b1e8a5f4d3f4d3f"
+}
+Código generado por IA. Revisar y usar cuidadosamente. Más información sobre preguntas frecuentes.
+Luego, puedes realizar consultas para obtener los datos relacionados. Por ejemplo, para obtener todos los clientes 
+de un gestor específico, puedes buscar todos los documentos en la colección de Clientes que tengan el gestorId correspondiente.
+Consultas y agregaciones:
+MongoDB ofrece potentes herramientas de agregación que te permiten realizar consultas complejas y obtener datos 
+relacionados de diferentes colecciones.
