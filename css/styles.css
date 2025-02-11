@@ -847,7 +847,14 @@ input[type='checkbox'] {
 .header .p-large {
 	margin-bottom: 1.875rem;
 }
+.texto-degradado {
+	
+	background: linear-gradient(265deg, var(--verdeModoAhorro) 50%, var(--amarilloDos) 100%) 0% 0% no-repeat padding-box;
+	background-clip: text;
+	--webkit-background-clip: text;
+	color: transparent;
 
+}
 
 /*************************/
 /*     05. Customers     */
@@ -909,26 +916,41 @@ input[type='checkbox'] {
 
 .cards-1 .card-body-1 {
 	padding: 40px 40px 55px 40px;
-	background: linear-gradient(184deg, #02913f 0%, #6cc52b 100%);	background-size: 200% 200%;
+	background: #fff;
+	background-size: 200% 200%;
 	height: 100%;
-	box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
-	color: #fff;
+	
+	color: #000;
+}
+.cards-1 .card-body-1:hover {
+	/* background: linear-gradient(184deg, #02913f 0%, #6cc52b 100%); */
+	cursor: pointer;
+	box-shadow: 0 0 20px 1px rgba(0,0,0,0.5)
+
 }
 .cards-1 .card-body-2 {
 	padding: 40px 40px 55px 40px;
-	background: linear-gradient(184deg, #ffd426 0%, #ff850e 100%);
+	background: #fff;
 	background-size: 200% 200%;
 	height: 100%;
-	box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
 	color: #fff;
+}
+.cards-1 .card-body-2:hover{
+/* background: linear-gradient(184deg, #ffd426 0%, #ff850e 100%); */
+cursor: pointer;
+box-shadow: 0 0 20px 1px rgba(0,0,0,0.5)
 }
 .cards-1 .card-body-3 {
 	padding: 40px 40px 55px 40px;
-	background: linear-gradient(193deg, #ff850e 0%, #ff1222 50%, #b51a15 100%);
+	background: #fff;
 	background-size: 200% 200%;
 	height: 100%;
-	box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
 	color: #fff;
+}
+.cards-1 .card-body-3:hover {
+	box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
+
+	 cursor: pointer;
 }
   
   /* Custom styles for the card title */
@@ -951,11 +973,12 @@ input[type='checkbox'] {
   .btn-primary, .btn-primary:visited, .btn-primary:active, .btn-primary:focus, .btn-primary:link  {
 	background-color: transparent;
 	border: 3px solid rgba(255, 255, 255, 0.1);
-	box-shadow: 0 35px 40px 5px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.6);
 	transition: all 0.5s;
 	padding: 20px 45px;
 	border-radius: 8px;
 	text-emphasis: none;
+	color: #000;
   }
   
   .btn-primary:hover{
@@ -1002,9 +1025,9 @@ input[type='checkbox'] {
 .basic-2 {
 	padding-top: 3.75rem;
 	padding-bottom: 4rem;
-	border-radius: 0 200px 0 200px;
-	background: linear-gradient(193deg, var(--verdeoscuro), var(--verdeclaro), var(--amarillUno), var(--amarilloDos));
-	box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
+	/* border-radius: 0 200px 0 200px; */
+	/* background: linear-gradient(193deg, var(--verdeoscuro), var(--verdeclaro), var(--amarillUno), var(--amarilloDos)); */
+	/* box-shadow: 0 0 20px 1px rgba(0,0,0,0.5); */
 	
 }
 
@@ -1016,21 +1039,33 @@ input[type='checkbox'] {
 }
 /* titulo cta-2 */
 
+.cta-1 {
+	align-items: center;
+	justify-content: center;
+}
+
 .cta-1  h2{
 	color: var(--negro);
 	font-size: 2rem;
 	margin-bottom: 2.5rem;
+	
 
 }
+.cta-2 {
+	text-align: center;
+}
 .cta-2  h2{
-	color: #fff;
-	font-size: 40px;
+	color: var(--verdeoscuro);
+	font-size: 32px;
+	align-items: center;
+	justify-content: center;
 	/* -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black; */
 }
 .cta-2  p{
-	color: #fff;
+	color: var(--negro);
 	font-size: 25px;
+	justify-content: left;
 }
 
 
@@ -1047,8 +1082,8 @@ input[type='checkbox'] {
 }
 .carde:hover .front {
 	background: #fff;
-	/* box-shadow: 0 0 40px 2px #36BF53; */
-	box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
+	box-shadow: 0 0 40px 2px var(--verdeModoAhorro);
+	/* box-shadow: 0 0 20px 1px rgba(0,0,0,0.5); */
 	transform: translateY(0);
 	height: 250px;
 	
@@ -1124,7 +1159,7 @@ input[type='checkbox'] {
 	padding-bottom: 4rem;
 	margin-bottom: 4rem;
 	margin-top: 4rem;
-	background: linear-gradient(193deg, var(--amarilloDos), var(--naranja));
+	/* background: linear-gradient(193deg, var(--amarilloDos), var(--naranja)); */
 	box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
 	border-radius: 0 200px 0 200px;
 }
@@ -1138,7 +1173,7 @@ input[type='checkbox'] {
 	padding-bottom: 4rem;
 	margin-bottom: 4rem;
 	margin-top: 4rem;
-	background: linear-gradient(193deg, var(--amarilloDos), var(--naranja), var(--rojo), var(--bordo));
+	/* background: linear-gradient(193deg, var(--amarilloDos), var(--naranja), var(--rojo), var(--bordo)); */
 	box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
 	border-radius: 0 200px 0 200px;
 }
@@ -1303,11 +1338,14 @@ input[type='checkbox'] {
   content: '';
   left: 0;
   bottom: 0;
-  width: 0;
+  width: 50%;
   box-sizing: border-box;
   height: 0;
   border-bottom: 3px solid transparent;
   border-left: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+
   transition: all .8s ease;
 }
 .cards-2 .card .card-body:after {
@@ -1315,11 +1353,11 @@ input[type='checkbox'] {
 	content: '';
 	left: 0;
 	top: 0;
-	width: 0;
+	width: 50%;
 	box-sizing: border-box;
 	height: 0;
-	border-top: 3px solid transparent;
-	border-right: 3px solid transparent;
+	/* border-top: 3px solid transparent; */
+	
 	transition: all .8s ease;
 }
 
@@ -1431,7 +1469,7 @@ input[type='checkbox'] {
 
 .cards-2 .card .label .best-value {
     position: relative;
-	width: 13.75rem;
+	width: 12.75rem;
 	padding: 0.3125rem 0 0.3125rem 4.125rem;
     background-color: #36BF53;
 	color: #fff;
@@ -1957,8 +1995,8 @@ a:hover.back-to-top {
 	}
 
 	.header h1 {
-		font-size: 6rem;
-        line-height: 6.5rem;
+		font-size: 4.5rem;
+        line-height: 5.5rem;
 		color: var(--negro);
 	}
 
@@ -1970,13 +2008,13 @@ a:hover.back-to-top {
 		background:#EAEEF5;
 		padding: 1.5rem 1.5rem 1.5rem 2.5rem;
 		border-radius: 4rem;
-		height: 120px;
+		/* height: 120px; */
 		display: flex;
 	}
 	.header span {
 		padding: .5rem;
 		font-size: 2rem ;
-		background: linear-gradient(265deg, var(--rojo) 0%, var(--amarilloDos) 25% ,var(--naranja) 50%, var(--verdeModoAhorro) 100%) 0% 0% no-repeat padding-box;
+		background: linear-gradient(265deg, var(--rojo) 0%, var(--naranja)  25% ,var(--amarilloDos) 50%, var(--verdeModoAhorro) 100%) 0% 0% no-repeat padding-box;
 	}
 	/* end of header */
 
@@ -2195,7 +2233,7 @@ a:hover.back-to-top {
 		/* background: url('../images/fondo-1.jpg') center center no-repeat;
 		background-size: cover;  */
 		/* background: linear-gradient(0deg, #fff, var(--verdeModoAhorro) 49%); */
-		height: 56rem;
+		/* height: 56rem; */
 	}
 
 	.header .header-content {
@@ -2378,7 +2416,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 12.5rem;
+		/* padding-top: 12.5rem; */
 		/* background: radial-gradient(circle, #ffffff 70%, #36bf53 175%); */
 		/* background: linear-gradient(124deg, #36bf53 0%, #ffffff 50%, #36bf53 100%); */
 	}
@@ -2403,7 +2441,7 @@ a:hover.back-to-top {
 		font-size: 18px;
 		align-items: center;
 
-		animation: typing 3s steps(85), blink 2s step-end infinite  alternate;
+		animation: typing 4s steps(85), blink 2s step-end infinite  alternate;
 		
 
 
@@ -2442,6 +2480,10 @@ a:hover.back-to-top {
 	}
 	/* end of header */
 	
+	.proximamente {
+		
+		color: var(--verdeoscuro);
+	}
 
 	/* Customers */
 	.slider-1 .slider-container {
@@ -2457,10 +2499,10 @@ a:hover.back-to-top {
 	.cards-1 .card {
 		max-width: 21rem;
 	}
-	.cards-1 .card:hover {
+	/* .cards-1 .card:hover {
 		scale: 1.2;
 		cursor: pointer;
-	}
+	} */
 
 
 
@@ -2551,7 +2593,7 @@ a:hover.back-to-top {
 	/* Footer */
 
 	.footer  {
-		background: linear-gradient(265deg, var(--rojo) 0%, var(--amarilloDos) 25% ,var(--naranja) 50%, var(--verdeModoAhorro) 100%) 0% 0% no-repeat padding-box;
+		/* background: linear-gradient(265deg, var(--rojo) 0%, var(--amarilloDos) 25% ,var(--naranja) 50%, var(--verdeModoAhorro) 100%) 0% 0% no-repeat padding-box; */
 	}
 
 	.footer h4, h2, p, ul, li, a {
