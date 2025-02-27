@@ -1,0 +1,119 @@
+@media (min-width: 370px) {
+
+	.btn-solid-reg {
+	
+		padding: 0.125rem;
+		border: 0.125rem solid #36BF53;
+		border-radius: 2rem;
+		background-color: #36BF53;
+		color: #fff;
+		font: 700 1.125rem/1.625rem;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+	.header .barra span {
+		display: flex;
+		
+		white-space: nowrap;
+		font-family: monospace;
+		color: #000;
+		border-right: 4px solid;
+		width: 100ch;
+		overflow: hidden;
+		font-size: 18px;
+		align-items: center;
+		animation: typing 4s steps(100), blink 2s step-end infinite alternate;
+	}
+	@keyframes typing {
+		from {width:0%}
+	}
+	@keyframes blink {
+		50% { border-color: transparent}
+	}
+    .header .pull-left {
+		font-size: 5rem;
+	}
+
+	.header .pull-left > a {
+		font-size: 80px;
+		height: 100px;
+		line-height: 64px;
+		text-align: center;
+		width: 100px;
+		border-radius: 100%;
+		color: var(--verdeModoAhorro);
+		/* border:1px solid #d7d7d7; */
+		position: relative;
+	}
+	.header .pull-left:hover > a{
+		scale: 1.2;
+	}
+
+
+	
+	/* General Styles */
+	.p-heading {
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/* end of general styles */
+
+
+	/* Header */
+	.header .header-content {
+		padding-top: 8.5rem;
+	}
+
+	.header h1 {
+		font-size: 3.5rem;
+        line-height: 4.5rem;
+		color: var(--negro);
+	}
+	.header h3 {
+		font-size: 1.125rem;
+	/* line-height: 2.125rem; */
+	text-shadow: 0 10px 20px rgb(0 0 0 / 18%);
+	padding-left: 1.25rem;
+	color: #626262;
+	}
+	.header h4 {
+		font-size: 1rem;
+	
+	text-shadow: 0 10px 20px rgb(0 0 0 / 18%);
+	padding-left: 1.25rem;
+	color: #000;
+	}
+
+	/* .header h1>span {
+		background: linear-gradient(265deg, #F2D600 0%, #27DB9D 100%) 0% 0% no-repeat padding-box;
+	} */
+	.header .barra {
+		box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+		background:#EAEEF5;
+		padding: 0.5rem ;
+		
+		
+		display: flex;
+	}
+	.header span {
+		padding: .5rem;
+		font-size: 2rem ;
+		/* background: linear-gradient(265deg, var(--rojo) 0%, var(--naranja)  25% ,var(--amarilloDos) 50%, var(--verdeModoAhorro) 100%) 0% 0% no-repeat padding-box; */
+	}
+	/* end of header */
+
+    .cards-1 .card {
+        border: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        /* background: linear-gradient(45deg, #0b521f, #36BF53); */
+        transition: box-shadow 0.3s, transform 0.3s, background-color 0.5sease;
+        max-width: 70%;
+        text-align: center;
+        height: auto;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+        margin: 14.5%;
+        /* align-content: center; */
+    }
+}
