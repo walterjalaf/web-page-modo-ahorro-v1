@@ -871,10 +871,10 @@ input[type='checkbox'] {
 }
 
 
-.header .p-large {
-	/* margin-bottom: 1.875rem; */
+/*.header .p-large {
+	margin-bottom: 1.875rem;
 }
-/* .header span {
+.header span {
 	padding: 0.5rem;
 	font-size: 2rem ;
 	background: linear-gradient(265deg, var(--rojo) 0%, var(--naranja)  25% ,var(--amarilloDos) 50%, var(--verdeModoAhorro) 100%) 0% 0% no-repeat padding-box;
@@ -2578,11 +2578,11 @@ a:hover.back-to-top {
 
 
 	/* Header */
-	.header .header-content {
-		/* padding-top: 12.5rem; */
-		/* background: radial-gradient(circle, #ffffff 70%, #36bf53 175%); */
-		/* background: linear-gradient(124deg, #36bf53 0%, #ffffff 50%, #36bf53 100%); */
-	}
+	/*.header .header-content {
+		 padding-top: 12.5rem; 
+		 background: radial-gradient(circle, #ffffff 70%, #36bf53 175%); 
+		 background: linear-gradient(124deg, #36bf53 0%, #ffffff 50%, #36bf53 100%);
+	}/*
 
 	
 
@@ -2630,8 +2630,8 @@ a:hover.back-to-top {
 		width: 100px;
 		border-radius: 100%;
 		color: var(--verdeModoAhorro);
-		/* border:1px solid #d7d7d7; */
-		position: relative;
+		/* border:1px solid #d7d7d7; 
+		position: relative;*/
 	}
 	.header .pull-left:hover > a{
 		scale: 1.2;
@@ -2669,15 +2669,13 @@ a:hover.back-to-top {
 		cursor: pointer;
 	} */
 
-
-
 	.cards-1 .col-lg-12 div.card:nth-child(3n+2) {
 		margin-right: 2.875rem;
 		margin-left: 2.875rem;
 	}
+
+
 	/* end of services */
-
-
 	/* Details 1 */
 	.basic-1 .text-container {
 		margin-top: 1.125rem;
@@ -2685,8 +2683,6 @@ a:hover.back-to-top {
 		margin-left: 1rem;
 	}
 	/* end of details 1 */
-
-
 	/* Details 2 */
 	.basic-2 .text-container {
 		margin-top: 5.375rem;
@@ -2694,8 +2690,6 @@ a:hover.back-to-top {
 		margin-left: 4rem;
 	}
 	/* end of details 2 */
-
-
 	/* Pricing */
 	.cards-2 .card {
 		width: 19.5rem;
@@ -2703,102 +2697,83 @@ a:hover.back-to-top {
 		margin-left: 1.625rem;
 	}
 	/* end of pricing */
-
-
-	/* Request */
-	.form-1 .text-container {
-		margin-right: 1.5rem;
-		margin-left: 6rem;
-	}
-
-	.form-1 form {
-		margin-right: 6rem;
-		margin-left: 1.5rem;
-	}
-	/* end of request */
-
-
 	/* Video */
 	.basic-3 p {
 		width: 55%;
 	}
 	/* end of video */
-
-
 	/* Testimonials */
 	.slider-2 h2 {
 		margin-top: 3.5rem;
 	}
 	/* end of testimonials */
-
-
 	/* About */
 	.basic-4 .team-member {
 		margin-right: 2.25rem;
 		margin-left: 2.25rem;
 	}
-	/* end of about */
+		/* end of extra pages */
 
-
-	/* Contact */
-	.form-2 .map-responsive {
-		max-width: 31rem;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.form-2 #contactForm {
-		max-width: 31rem;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of contact */
-
-
-	/* Footer */
-
-	.footer  {
-		/* background: linear-gradient(265deg, var(--rojo) 0%, var(--amarilloDos) 25% ,var(--naranja) 50%, var(--verdeModoAhorro) 100%) 0% 0% no-repeat padding-box; */
-	}
-
-	.footer h4, h2, p, ul, li, a {
-		color: var(--negro);
-	}
-	.footer .footer-col {
-		width: 90%;
-		
-	}
-
-	.footer .footer-col.middle {
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.footer .footer-col.last {
-		margin-right: 0;
-		margin-left: auto;
-	}
-	/* end of footer */
-
-
-	/* Extra Pages */
-	.ex-header h1 {
-		width: 60%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.ex-basic-2 .form-container {
-		margin-left: 1.75rem;
-	}
-
-	.ex-basic-2 .image-container-small {
-		margin-left: 1.75rem;
-	}
-	/* end of extra pages */
-}
 /* end of min-width width 1200px */
 
 .price{
 display: none;
+}
+/*Cambiados o agregados*/
+
+/*Cambiados o agregados*/
+
+
+.form-1 .text-container, .form-1 .form-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    padding: 1rem; 
+}
+
+.form-1 .text-container {
+    margin-bottom: 2rem; 
+}
+
+.form-1 .form-container {
+    border: 1px solid #ddd;
+    padding: 2rem; 
+    background-color: #f9f9f9; 
+}
+
+#whatsappButton {
+    border: none;
+    outline: none;
+    transition: opacity 0.3s ease; /* Agrega una transición suave */
+}
+
+#whatsappButton img {
+    border: none;
+}
+
+#whatsappButton:hover {
+    cursor: pointer;
+    opacity: 0.8; /* Reduce la opacidad al 80% */
+}
+
+.footer .container {
+    display: flex; /* Muestra los elementos en línea */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+    gap: 10px; /* Agrega un pequeño espacio entre los elementos */
+    padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+}
+
+.footer .container h4 {
+    margin: 0; /* Elimina márgenes predeterminados del h4 */
+}
+
+.footer .container .fa-stack {
+    margin: 0; /* Elimina márgenes predeterminados de los iconos */
+}
+
+.copyright .container {
+    text-align: center; /* Centra el texto del copyright */
+    padding: 10px; /* Agrega un poco de espacio alrededor del texto del copyright */
 }

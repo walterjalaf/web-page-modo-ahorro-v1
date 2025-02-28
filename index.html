@@ -674,8 +674,8 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Completa el siguiente formulario para solicitar una reunión</h2>
-                        <p>Modo Ahorro se contactará con usted, lo cual puede saldar dudas del plan que haya escogido, si desea cambiar por otro plan lo podrá solicitar con el personal que pacte la visita</p>
+                        <h2>Contáctese rapidamente por WhatsApp</h2>
+                        <p>Le permitira facilmente saldar todas las dudas</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-check"></i>
@@ -683,124 +683,82 @@
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Diferente formas de pagos</strong> Efectivo, Tranferencias, Débitos y Créditos</div>
+                                <div class="media-body"><strong class="blue">Diferente formas de pagos</strong> Efectivo, Transferencias, Débitos y Créditos</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
-                                <div class="media-body"><strong class="blue">Visitas personalizadas</strong> trataremos de pactar en lo posible, los horarios y dias que más le convenga</div>
+                                <div class="media-body"><strong class="blue">Visitas personalizadas</strong> Trataremos de pactar en lo posible, los horarios y días que más le convenga</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-check"></i>
                                 <div class="media-body"><strong class="blue">Gracias por confiar en nosotros</strong></div>
                             </li>
                         </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+                    </div>
+                </div>
                 <div class="col-lg-6">
-
                     <!-- Request Form -->
                     <div class="form-container">
                         <form id="requestForm" data-toggle="validator" data-focus="false">
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="rname" name="rname" required>
                                 <label class="label-control" for="rname">Nombre y Apellido</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="remail" name="remail" required>
-                                <label class="label-control" for="remail">Email</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
-                                <label class="label-control" for="rphone">Telefóno</label>
-                                <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
                                 <select class="form-control-select" id="rselect" required>
                                     <option class="select-option" value="" disabled selected>Interesado en...</option>
-                                    <option class="select-option" value="Personal Loan">Hogar</option>
-                                    <option class="select-option" value="Car Loan">Comercio</option>
-                                    <option class="select-option" value="House Loan">Pymes pequeñas</option>
-                                    <option class="select-option" value="House Loan">Industrias o Pymes grandes</option>
+                                    <option class="select-option" value="Hogar">Hogar</option>
+                                    <option class="select-option" value="Comercio">Comercio</option>
+                                    <option class="select-option" value="Pymes pequeñas">Pymes pequeñas</option>
+                                    <option class="select-option" value="Industrias o Pymes grandes">Industrias o Pymes grandes</option>
                                 </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>Yo estoy de acuerdo con las condiciones de politicas de privacidad.<a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
-                                <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">Solicitar</button>
+                                <button type="button" class="button" id="whatsappButton">
+                                    <img src="/web-page-modo-ahorro-v1/images/logowsp.png" height="75" alt="WhatsApp" />
+                                </button>
                             </div>
                             <div class="form-message">
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>
                             </div>
                         </form>
                     </div> <!-- end of form-container -->
-                    <!-- end of request form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end of request -->
-
     
-
- 
-
-
-    <!-- Footer -->
+   <script>
+    document.getElementById('whatsappButton').addEventListener('click', function() {
+        var name = document.getElementById('rname').value;
+        var interest = document.getElementById('rselect').value;
+        var message = `Hola, mi nombre es ${name} y estoy interesado en ${interest}.`;
+    
+        var whatsappUrl = `https://wa.me/+54264154533704?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    });
+    </script>
+    
+   
+    
     <div class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    
-                    <h2>Información de Contacto</h2>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="address">Por el momento no contamos con un lugar fisico como sede comercial, pero les dejamos los siguientes datos</li>
-                        <li><i class="fas fa-map-marker-alt"></i>Provincia de San Juan, Capital</li>
-                        <li><i class="fas fa-phone"></i><a href="tel:003024630820">2644533704</a></li>
-                        <li><i class="fas fa-envelope"></i><a href="mailto:modoahorrosj@gmail.com">modoahorrosj@gmal.com</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col middle">     
-                    </div>
-                </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col last">
-                        <h4>Social Media</h4>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        
-                        
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
+            <span class="fa-stack">
+                <a href="https://www.instagram.com/modoahorrox/k">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x"></i>
+                </a>
+            </span>
+            <span class="fa-stack">
+                <a href="https://www.linkedin.com/company/104575710/admin/dashboard/">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                </a>
+            </span>
+            
+        </div>
+       <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
@@ -811,6 +769,12 @@
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
+    
+    </div> 
+    
+    </div>
+    
+    
     
     	
     <!-- Scripts -->
